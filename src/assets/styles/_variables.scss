@@ -13,7 +13,7 @@ $mqMinWidth: 420px;
 
 /* New */
 
-$color-principal: white;
+$color-principal: #fabada;
 $color-secondary: #47f4d4;
 $color-background-1: #f7f7f7;
 $color-background-2: #141414;
@@ -26,3 +26,8 @@ $widthDesktop: 1025px;
 $widthDesktopL: 1441px;
 
 $font-size: 14px;
+
+/* Changes in Bootstrap */
+
+$primary: $color-principal;
+$secondary: $color-secondary;

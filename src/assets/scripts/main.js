@@ -21,20 +21,4 @@ import * as bootstrap from 'bootstrap';
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Index selectors
-  const overlay = document.querySelector('.overlay');
-  const toggler = document.querySelector('.navbar-toggler');
-
-  toggler.addEventListener('click', function(){
-
-    const isExpanding = !document.getElementById('navbarNav').classList.contains('show');
-
-    if(isExpanding){
-      overlay.style.display = 'block';
-    }else{
-      overlay.style.display = 'none';
-    }
-      
-  });
-
 });

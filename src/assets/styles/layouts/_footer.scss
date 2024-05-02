@@ -1,21 +1,32 @@
 .footer {
 
-        &__logo {
-            width: 100%;
-            max-width: 100px;
-            height: auto;
-        }
+    &__logo {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
 
-        &__line {
-            height: 1px;
-            background-color: #ccc; 
-            margin: 1rem 5rem 1rem 5rem;           
-        }
+    &__line {
+        height: 1px;
+        background-color: #ccc;
+        margin: 1rem 5rem 1rem 5rem;
+    }
 
-        &__links {
+    &__links {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: $widthMinTablet) {
             display: flex;
             justify-content: center;
             gap: 5rem;
         }
-   
+
+    }
+
 }

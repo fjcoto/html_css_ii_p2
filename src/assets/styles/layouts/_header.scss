@@ -1,9 +1,21 @@
 .header {
 
+    @media screen and (min-width: $widthMinTablet) {
+        margin: 0 4rem 0 4rem;
+    }
+
     &__logo {
         width: 100%;
         max-width: 100px;
         height: auto;
+    }
+
+    &__toggler {
+        z-index: 1000;
+    }
+    
+    &__navbar{
+        z-index: 1000;
     }
     
 }

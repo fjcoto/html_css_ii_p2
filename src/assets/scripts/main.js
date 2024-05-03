@@ -4,6 +4,8 @@
  */
 
 import * as bootstrap from 'bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
@@ -20,5 +22,8 @@ import * as bootstrap from 'bootstrap';
 */
 
 document.addEventListener('DOMContentLoaded', function () {
-
+  // Init AOS
+  AOS.init({
+    once: true,
+  });
 });

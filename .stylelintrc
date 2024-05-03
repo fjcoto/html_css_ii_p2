@@ -29,7 +29,8 @@
             "rem",
             "ms",
             "s",
-            "fr"
+            "fr",
+            "vh"
         ],
         "length-zero-no-unit": true,
         "selector-max-specificity": "0,2,2",

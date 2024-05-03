@@ -26,4 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     once: true,
   });
+
+  // Active menu option
+  const path = window.location.pathname;
+  const options = document.querySelectorAll('.nav-link');
+
+  options.forEach(function (option) {
+    if ("/" + option.getAttribute('href') === path) {
+      option.classList.add('active');
+      console.log("a");
+    }
+
+  });
+
 });

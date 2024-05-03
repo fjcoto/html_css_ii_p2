@@ -1,7 +1,7 @@
 .header {
 
     @media screen and (min-width: $widthMinTablet) {
-        margin: 0 4rem 0 4rem;
+        padding: 0 4rem 0 4rem;
     }
 
     &__logo {
@@ -9,5 +9,5 @@
         max-width: 100px;
         height: auto;
     }
-    
+
 }

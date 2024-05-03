@@ -1,0 +1,45 @@
+.participants {
+    flex: 1;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+        color: black;
+    }
+
+    &__reticule {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        @media screen and (min-width: $widthMinTablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        &__item {
+            width: auto;
+            height: 600px;
+            margin: 1rem 0;
+
+            @media screen and (min-width: $widthMinTablet) {
+                flex: 1 0 33%;
+            }
+
+            @media screen and (min-width: $widthDesktop) {
+                flex: 1 0 25%;
+            }
+
+            @media screen and (min-width: $widthDesktopL) {
+                flex: 1 0 15%;
+            }
+
+        }
+    }
+}

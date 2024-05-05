@@ -11,3 +11,14 @@
     }
 
 }
+
+/* Changes in Bootstrap */
+
+.nav-link:hover {
+    font-weight: 700;
+    color: $secondary;
+}
+
+.active {
+    font-weight: 700;
+}

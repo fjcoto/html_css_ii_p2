@@ -16,8 +16,24 @@ body {
   background-color: white;
 }
 
-.active {
+h2 {
   font-weight: 700;
+  color: $secondary;
+}
+
+.zoom {
+  overflow: hidden;
+  cursor: pointer;  
+  transition: transform .3s ease-out;    
+}
+
+.zoom:hover {
+
+  @media screen and (min-width: $widthMinTablet) {
+    box-shadow: 0 0 .5rem .5rem $color-principal-rgba;
+    transform: scale(1.05);    
+  }
+
 }
 
 /*
@@ -105,12 +121,12 @@ body {
   }
 
   &__grid-item {
-    flex: 0 1 50%;
     display: flex;
+    flex: 0 1 50%;    
     align-items: center;
     justify-content: center;
-    text-align: center;
     margin: 0.25rem;
+    text-align: center;
 
     &--occuped {
       font-size: 12px;
@@ -134,6 +150,7 @@ body {
   }
 
   @supports (display: grid) {
+
     &__grid-container {
       display: grid;
       grid-template-rows: repeat(4, 1fr);

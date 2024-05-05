@@ -12,7 +12,8 @@
                 "%"
             ],
             "/^padding|^gap/": [
-                "rem"
+                "rem",
+                "px"
             ],
             "font-size": [
                 "rem",

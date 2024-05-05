@@ -18,7 +18,7 @@
 
     &__list-title {
         position: relative;
-        padding-left: 2.5rem;
+        padding-left: 40px;
         counter-increment: list-counter;
     }
 
@@ -28,8 +28,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 1.875rem;
-        height: 1.875rem;
+        width: 30px;
+        height: 30px;
         font-size: 1rem;
         color: $secondary;
         content: counter(list-counter);
@@ -38,7 +38,7 @@
     }
 
     &__list-text {
-        padding-left: 2.5rem;
+        padding-left: 40px;
     }
 
 }

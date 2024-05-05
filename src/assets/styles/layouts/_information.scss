@@ -18,8 +18,8 @@
 
     &__list-title {
         position: relative;
-        counter-increment: list-counter;
         padding-top: 3px;
+        counter-increment: list-counter;
 
         &:has(+ .information__list-text) {
             font-weight: 700;

@@ -31,25 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
     once: true,
   });
 
-    // Init Swiper
-    const swiper = new Swiper('.swiper', {
+  // Init Swiper
+  const swiper = new Swiper('.swiper', {
 
-      modules: [Navigation, Pagination, Autoplay],
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-  
-      pagination: {
-        el: '.swiper-pagination',
-      },
-  
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
-    });
+    modules: [Navigation, Pagination, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 
   // Active menu option
   const path = window.location.pathname;

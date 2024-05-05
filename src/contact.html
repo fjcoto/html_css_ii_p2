@@ -12,13 +12,11 @@
 
 <body>
     <include src="./views/header.html"></include>
-    <main class="information">
+    <main class="contact">
 
-        <section class="information__container container-fluid">
+        <section class="contact__container container-fluid">
 
-            <h2 class="text-center mb-5">Contacto</h2>
-
-            <div class="swiper">
+            <div class="swiper my-5">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="assets/images/banner-1.png" alt="Grupo de Rock Queen en 1977">
                     </div>
@@ -39,30 +37,33 @@
             </div>
 
 
-            <form class="my-5" name="contact" netlify>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
-                        placeholder="Tu nombre">
-                    <div id="nameHelp" class="form-text">Introduce el nombre por el que quieres que nos dirigamos a ti.
+            <div class="contact__form-container">
+                <h2 class="text-center mb-4">Contacto</h2>
+                <form name="contact" netlify>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
+                            placeholder="Tu nombre">
+                        <div id="nameHelp" class="form-text">Introduce el nombre por el que quieres que nos dirigamos a ti.
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Sobre ti</label>
-                    <textarea class="form-control" id="message" name="message" aria-describedby="messageHelp"
-                        placeholder="Algo sobre ti" rows="5"></textarea>
-                    <div id="messageHelp" class="form-text">Introduce información sobre ti para que podamos conocerte un
-                        poco.
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
                     </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Sobre ti</label>
+                        <textarea class="form-control" id="message" name="message" aria-describedby="messageHelp"
+                            placeholder="Algo sobre ti" rows="5"></textarea>
+                        <div id="messageHelp" class="form-text">Introduce información sobre ti para que podamos conocerte un
+                            poco.
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
 
             <p class="fs-6 fst-italic pb-3">Fuente: Imágenes generadas por DALL-E con <a
                     href="https://www.microsoft.com/es-es/microsoft-copilot" class="text-dark">Microsoft Copilot</a> y

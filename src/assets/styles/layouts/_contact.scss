@@ -10,10 +10,16 @@
         color: black;
     }
 
+    &__form-container {
+        padding: 40px;
+        margin-bottom: 1.7rem;
+        border-radius: 1rem;
+        background-color: $color-hwb-1;
+    }
+
 }
 
 .swiper {
-    margin-top: 1rem;
     width: 80%;
 }
 
@@ -37,7 +43,6 @@
         width: 50%;
     }
 }
-
 
 .swiper-wrapper {
     text-align: center;

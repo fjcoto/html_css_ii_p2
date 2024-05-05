@@ -17,21 +17,22 @@ body {
 }
 
 h2 {
+  font-size: 2vw;
   font-weight: 700;
   color: $secondary;
 }
 
 .zoom {
   overflow: hidden;
-  cursor: pointer;  
-  transition: transform .3s ease-out;    
+  cursor: pointer;
+  transition: transform .3s ease-out;
 }
 
 .zoom:hover {
 
   @media screen and (min-width: $widthMinTablet) {
     box-shadow: 0 0 .5rem .5rem $color-principal-rgba;
-    transform: scale(1.05);    
+    transform: scale(1.05);
   }
 
 }
@@ -122,7 +123,7 @@ h2 {
 
   &__grid-item {
     display: flex;
-    flex: 0 1 50%;    
+    flex: 0 1 50%;
     align-items: center;
     justify-content: center;
     margin: 0.25rem;

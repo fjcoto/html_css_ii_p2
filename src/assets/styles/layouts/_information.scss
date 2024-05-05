@@ -16,17 +16,15 @@
         counter-reset: list-counter;
     }
 
-    &__list-item {
-
-        :has(.information__list-text){
-            margin-top: 40px;
-        }
-    }
-
     &__list-title {
         position: relative;
         counter-increment: list-counter;
         padding-top: 3px;
+
+        &:has(+ .information__list-text) {
+            font-weight: 700;
+
+        }
     }
 
     &__list-title::before {

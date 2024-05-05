@@ -31,7 +31,8 @@
             "ms",
             "s",
             "fr",
-            "vh"
+            "vh",
+            "dvw"
         ],
         "length-zero-no-unit": true,
         "selector-max-specificity": "0,2,2",

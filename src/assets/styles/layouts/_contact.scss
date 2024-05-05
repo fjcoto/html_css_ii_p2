@@ -11,3 +11,34 @@
     }
 
 }
+
+.swiper {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.swiper img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media screen and (min-width: 601px) {
+
+    .swiper img {
+        width: 75%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .swiper img {
+        width: 50%;
+    }
+}
+
+
+.swiper-wrapper {
+    text-align: center;
+}

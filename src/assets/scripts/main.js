@@ -7,6 +7,10 @@ import * as bootstrap from 'bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import Swiper from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
+
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
@@ -26,6 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     once: true,
   });
+
+    // Init Swiper
+    const swiper = new Swiper('.swiper', {
+
+      modules: [Navigation, Pagination, Autoplay],
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+  
+      pagination: {
+        el: '.swiper-pagination',
+      },
+  
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
 
   // Active menu option
   const path = window.location.pathname;

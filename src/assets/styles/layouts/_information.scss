@@ -1,4 +1,5 @@
 @layer information {
+
     .information {
         flex: 1;
 
@@ -49,9 +50,9 @@
             border-radius: 50%;
 
             @container(min-width: #{$widthMinTablet}) {
-                font-size: 1.5rem;
                 width: 35px;
                 height: 35px;
+                font-size: 1.5rem;
             }
         }
 

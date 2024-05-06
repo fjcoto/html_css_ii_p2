@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@layer reset {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 body {
@@ -59,6 +61,7 @@ h2 {
     justify-content: center;
     margin-top: 0.5rem;
     color: white;
+    container-type: inline-size;
   }
 
   &__grid-container {
@@ -112,6 +115,11 @@ h2 {
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
       gap: 0.5rem;
+
+      @container(min-width: #{$widthMinTablet}) {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     &__grid-item {

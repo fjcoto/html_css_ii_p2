@@ -1,47 +1,49 @@
-.participants {
-    flex: 1;
+@layer participant {
+    .participants {
+        flex: 1;
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0.5rem;
-        color: black;
-    }
-
-    &__reticule {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;        
-        justify-content: center;
-        
-
-        @media screen and (min-width: $widthMinTablet) {
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+            color: black;
+            container-type: inline-size;
         }
 
-        &__item {
-            width: auto;
-            height: 600px;
-            margin: 1rem 0;
+        &__reticule {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
 
-            @media screen and (min-width: $widthMinTablet) {
-                flex: 1 0 33%;
+            @container (min-width: #{$widthMinTablet}) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
             }
 
-            @media screen and (min-width: $widthDesktop) {
-                flex: 1 0 25%;
-            }
+            &__item {
+                width: 100%;
+                margin: 1rem 0;
+                min-height: 600px;
 
-            @media screen and (min-width: $widthDesktopL) {
-                flex: 1 0 15%;
-            }
+                @container (min-width: #{$widthMinTablet}) {
+                    flex: 1 0 33%;
+                }
 
+                @container (min-width: #{$widthDesktop}) {
+                    flex: 1 0 25%;
+                }
+
+                @container (min-width: #{$widthDesktopL}) {
+                    flex: 1 0 15%;
+                }
+
+            }
         }
+
     }
-    
 }

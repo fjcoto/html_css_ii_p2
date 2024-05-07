@@ -20,7 +20,13 @@ $color-background-1: #f7f7f7;
 $color-background-2: #141414;
 $color-background-3: #c8c8c8;
 $color-background-4: #f9cece;
+$color-disp-p3-1: color(display-p3 1 0.3 0.7);
+$color-disp-p3-2: color(display-p3 0.2 0.5 1);
+$color-disp-p3-3: color(display-p3 0.2 1 0.3);
 $color-hwb-1: color.hwb(130, 40%, 25%);
+$color-hwb-2: color.hwb(64 20% 2%);
+$color-hwb-3: color.hwb(275, 50%, 0%);
+
 
 $widthMinTablet: 601px;
 $widthMaxTablet: 1024px;

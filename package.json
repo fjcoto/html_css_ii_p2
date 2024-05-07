@@ -54,6 +54,7 @@
     "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.2",
     "swiper": "^11.1.1"
   }
 }

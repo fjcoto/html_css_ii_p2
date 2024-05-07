@@ -1,5 +1,5 @@
 @layer contact {
-    
+
     .contact {
         flex: 1;
 
@@ -43,4 +43,38 @@
     .swiper-wrapper {
         text-align: center;
     }
+}
+
+canvas {
+    width: 300px;
+    height: 300px;
+
+    @container(min-width: #{$widthMinTablet}) {
+        width: 60svw;
+    }
+
+    @container(min-width: #{$widthDesktop}) {
+        width: 40svw;
+    }
+
+}
+
+.button-custom-1 {
+    background-color: $color-disp-p3-1;
+}
+
+.button-custom-2 {
+    background-color: $color-disp-p3-2;
+}
+
+.button-custom-3 {
+    background-color: $color-disp-p3-3;
+}
+
+.button-custom-4 {
+    background-color: $color-hwb-2;
+}
+
+.button-custom-5 {
+    background-color: $color-hwb-3;
 }

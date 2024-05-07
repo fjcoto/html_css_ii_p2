@@ -11,6 +11,8 @@ import Swiper from 'swiper';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
+import Chart from 'chart.js/auto';
+
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
@@ -65,5 +67,42 @@ document.addEventListener('DOMContentLoaded', function () {
   // Init Tooltip
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+  // Init Chart
+  const ctx = document.getElementById('chart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Granollers', 'Mollet del Vallès', 'La Garriga', 'Lliçà de Vallès', 'Parets del Vallès'],
+      datasets: [{
+        label: 'Participación por localidad en 2023',
+        data: [12, 19, 3, 5, 2],
+        backgroundColor: [
+          'rgba(233, 30, 99, 0.8)',
+          'rgba(33, 150, 243, 0.8)',
+          'rgba(76, 175, 80, 0.8)',
+          'rgba(255, 193, 7, 0.8)',
+          'rgba(63, 81, 181, 0.8)'
+        ],
+        borderColor: [
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)',
+          'rgba(255, 255, 255, 1)'
+        ],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: false,
+      plugins: {
+        legend: {
+          position: 'top',
+        }
+      }
+    }
+  });
+
 
 });
